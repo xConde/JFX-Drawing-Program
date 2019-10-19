@@ -6,7 +6,7 @@ package shapes;
  */
 public abstract class Shape {
 	
-	protected double xCord, yCord;
+	protected int xCord, yCord;
 	protected Color color;
 	
 	abstract public void draw();
@@ -16,13 +16,13 @@ public abstract class Shape {
 	public double getxCord() {
 		return xCord;
 	}
-	public void setxCord(double xCord) {
+	public void setxCord(int xCord) {
 		this.xCord = xCord;
 	}
 	public double getyCord() {
 		return yCord;
 	}
-	public void setyCord(double yCord) {
+	public void setyCord(int yCord) {
 		this.yCord = yCord;
 	}
 	public Color getColor() {

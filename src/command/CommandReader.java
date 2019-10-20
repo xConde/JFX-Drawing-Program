@@ -5,6 +5,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Stack;
 
+import shapes.Rectangle;
+import shapes.Shape;
+import shapes.ShapeType;
+
 public class CommandReader {
     Stack<Command> commandsToExecute = new Stack<>();
     Stack<Command> commandHistory = new Stack<>();
@@ -29,7 +33,15 @@ public class CommandReader {
 
             switch(words[0]){
                 case "CREATE":
-                    command = new CreateCommand();
+                    ShapeType sType = ShapeType.valueOf(words[1]);
+                    int[] x;
+                    x[0] = Integer.parseInt(words[2]);
+                    
+                    if(sType == ShapeType.RECTANGLE) {
+                        x[1] = Integer.parseInt(words[3]);
+                    }
+
+                    command = new CreateCommand(sType, x);
                     commandsToExecute.push(command);
                     commandHistory.push(command.Reverse());
                     break;

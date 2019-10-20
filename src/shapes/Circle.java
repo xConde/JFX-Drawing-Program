@@ -6,9 +6,9 @@ public class Circle extends Shape {
 	
 	public Circle(int radius) {
 		this.radius = radius;
-		this.color = Color.BLUE;
 		this.xCord = 0;
 		this.yCord = 0;
+		this.color = Color.BLUE;
 	}
 
 	@Override

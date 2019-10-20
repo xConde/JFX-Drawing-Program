@@ -1,6 +1,6 @@
 package command;
 
-public class DrawCommand extends Command{
+public class CreateCommand extends Command {
 
     @Override
     public Command Reverse() {

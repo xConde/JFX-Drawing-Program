@@ -6,7 +6,7 @@ package command;
  */
 public abstract class Command {
 
-	public abstract void Reverse();
+	public abstract Command Reverse();
 	public abstract void Do();
 	
 }

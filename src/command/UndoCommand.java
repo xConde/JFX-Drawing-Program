@@ -8,14 +8,13 @@ import java.util.Stack;
  */
 public class UndoCommand {
 	
-	private static Stack<Command> Undo, Renewal;
+	private static Stack<Command> Undo;
 	
 	/**
-	 * UndoCommand constructor initalizing new stacks. 
+	 * UndoCommand constructor initializing new stacks.
 	 */
 	public UndoCommand() {
 		Undo = new Stack();
-		Renewal = new Stack();
 	}
 	
 	
@@ -27,27 +26,10 @@ public class UndoCommand {
 			return;
 		Command command = Undo.pop();
 		command.Reverse();
-		Renewal.push(command);
 	}
-	
-	/**
-	 * Renewal method that "redoes" a command.
-	 */
-	public void Renewal() {
-		if (Renewal.isEmpty())
-			return;
-		Command command = Renewal.pop();
-		command.Do();
-		Undo.push(command);
-	}
+
 	
 	public void addUndo(Command command) {
 		Undo.push(command);
-		Renewal.removeAllElements();
 	}
-	
-	public void addRenewal(Command command) {
-		Renewal.push(command);
-	}
-
 }

@@ -13,7 +13,7 @@ public class Circle extends Shape {
 
 	@Override
 	public void draw() {
-		String.format("Circle, Color: %s, Origin: (%d,%d), Radius: %d", color, xCord, yCord, radius);
+		System.out.println(String.format("Circle, Color: %s, Origin: (%d,%d), Radius: %d", color, xCord, yCord, radius));
 		
 	}
 

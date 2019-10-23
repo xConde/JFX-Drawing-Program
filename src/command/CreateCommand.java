@@ -1,5 +1,6 @@
 package command;
 
+import launcher.Launcher;
 import shapes.ShapeType;
 import shapes.Shape;
 import shapes.ShapeBuilder;
@@ -12,13 +13,17 @@ public class CreateCommand extends Command {
         this.shape = ShapeBuilder.createShape(sType, x);
     }
 
+    public CreateCommand(Shape shape){
+        this.shape = shape;
+    }
+
     @Override
     public Command Reverse() {
-        return null;
+        return new DeleteCommand();
     }
 
     @Override
     public void Do() {
-
+        Launcher.shapesInScene.add(shape);
     }
 }

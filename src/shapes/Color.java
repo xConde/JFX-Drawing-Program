@@ -6,7 +6,7 @@ package shapes;
  *
  */
 public enum Color {
-	RED("RED"), BLUE("BLUE"), YELLOW("YELLOW"), ORANGE("ORANGE"), GREEN("GREEN");
+	RED("Red"), BLUE("Blue"), YELLOW("Yellow"), ORANGE("Orange"), GREEN("Green");
 	
 	private final String colorText;
 	

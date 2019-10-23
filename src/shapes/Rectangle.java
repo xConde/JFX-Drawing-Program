@@ -14,7 +14,7 @@ public class Rectangle extends Shape{
 
 	@Override
 	public void draw() {
-		String.format("Rectangle, Color: %s, Origin: (%d,%d), Width: %d, Height: %d", color, xCord, yCord, width, height);
+		System.out.println(String.format("Rectangle, Color: %s, Origin: (%d,%d), Width: %d, Height: %d", color, xCord, yCord, width, height));
 		
 	}
 

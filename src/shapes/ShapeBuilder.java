@@ -5,6 +5,13 @@ package shapes;
  *
  */
 public class ShapeBuilder {
+	
+	/**
+	 * createShape method. Creates a shape based off of shape text.
+	 * @param shapeType
+	 * @param x
+	 * @return
+	 */
     public static Shape createShape(ShapeType shapeType, int[] x) {
         Shape shape = null;
         switch(shapeType.getShapesText()){
@@ -17,6 +24,7 @@ public class ShapeBuilder {
             default:
                 break;
         }
+        
         return shape;
     }
 }

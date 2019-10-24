@@ -8,11 +8,17 @@ import launcher.Launcher;
  */
 public class DrawCommand extends Command{
 
+	/**
+	 * Reverse method Override for DrawCommand returns command 
+	 */
     @Override
     public Command Reverse() {
         return null;
     }
 
+    /**
+     * Do method Override draws the selected shape
+     */
     @Override
     public void Do() {
         Launcher.selectedShape.draw();

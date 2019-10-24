@@ -9,11 +9,17 @@ import shapes.Shape;
  */
 public class DrawSceneCommand extends Command{
 
+	/**
+	 * Reverse method Override returns a command.
+	 */
     @Override
     public Command Reverse() {
         return null;
     }
 
+    /**
+     * do method Override draws the scene. 
+     */
     @Override
     public void Do() {
         for(Shape shp : Launcher.shapesInScene){

@@ -8,6 +8,10 @@ public class Circle extends Shape {
 	
 	protected int radius;
 	
+	/**
+	 * Circle constructor.
+	 * @param radius
+	 */
 	public Circle(int radius) {
 		this.radius = radius;
 		this.xCord = 0;
@@ -15,12 +19,17 @@ public class Circle extends Shape {
 		this.color = Color.BLUE;
 	}
 
+	/**
+	 * draw method Override for Circle
+	 */
 	@Override
 	public void draw() {
 		System.out.println(String.format("Circle, Color: %s, Origin: (%d,%d), Radius: %d", color, xCord, yCord, radius));
-		
 	}
 
+	/**
+	 * delete method Override for circle
+	 */
 	@Override
 	void delete() {
 		// TODO Auto-generated method stub

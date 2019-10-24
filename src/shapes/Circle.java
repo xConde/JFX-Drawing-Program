@@ -1,5 +1,9 @@
 package shapes;
 
+/**
+ * Circle class. Radius is required for a circle, origin is set to (0,0), and the color is created as Blue.
+ *
+ */
 public class Circle extends Shape {
 	
 	protected int radius;

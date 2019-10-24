@@ -1,5 +1,9 @@
 package shapes;
 
+/**
+ * Rectangle class. Width and height are required for a rectangle. The origin is (0,0). The color of a created rectangle is Red. 
+ *
+ */
 public class Rectangle extends Shape{
 	
 	protected int width, height;

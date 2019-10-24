@@ -1,5 +1,9 @@
 package shapes;
 
+/**
+ * Rectangle class. Width and height are required for a rectangle. The origin is (0,0). The color of a created rectangle is Red. 
+ *
+ */
 public class Rectangle extends Shape{
 	
 	protected int width, height;
@@ -23,5 +27,23 @@ public class Rectangle extends Shape{
 		// TODO Auto-generated method stub
 		
 	}
+
+	public int getWidth() {
+		return width;
+	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	
+	
 
 }

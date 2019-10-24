@@ -2,7 +2,6 @@ package shapes;
 
 /**
  * Color enum
- * @author Ed
  *
  */
 public enum Color {

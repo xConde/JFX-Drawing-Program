@@ -10,7 +10,7 @@ public enum Shapes {
 	private final String shapesText;
 	
 	/**
-	 * Color constructor takes in a specified text for color and makes it more visually appealing.
+	 * Shapes constructor takes in a specified text for a type of shape.
 	 */
 	Shapes(String shapesText) {
 		this.shapesText = shapesText;

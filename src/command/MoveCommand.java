@@ -2,6 +2,10 @@ package command;
 
 import launcher.Launcher;
 
+/**
+ * MoveCommand class. Moves the currently selected shapes origin to the specified (x,y)
+ *
+ */
 public class MoveCommand extends Command{
 
     int x, y;

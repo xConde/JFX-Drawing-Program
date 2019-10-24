@@ -2,6 +2,10 @@ package command;
 
 import launcher.Launcher;
 
+/**
+ * ColorCommand class. Sets the color of the currently selected shape by utilizing Color.java enum. 
+ *
+ */
 public class ColorCommand extends Command{
 
     String color;

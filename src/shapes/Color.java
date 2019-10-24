@@ -1,8 +1,7 @@
 package shapes;
 
 /**
- * Color enum
- * @author Ed
+ * Color enum. Allows us to pick colors red, blue, yellow, orange, or green. 
  *
  */
 public enum Color {

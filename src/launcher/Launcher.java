@@ -8,6 +8,11 @@ import shapes.Shape;
 import java.util.ArrayList;
 import java.util.Stack;
 
+/**
+ * Launcher class. Invokes the project by assigning presets for objects and starting the reader. Can handle commands such as "UNDO", but will only read
+ * if there is something available. 
+ *
+ */
 public class Launcher {
     Shape noShape = new NoShape();
     public static Shape prevSelectedShape = new NoShape();

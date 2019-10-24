@@ -1,7 +1,7 @@
 package shapes;
 
 /**
- * Shape class. TODO description <<<<<
+ * Shape class. Super class for shape type rectangle, circle, and "no shape".
  *
  */
 public abstract class Shape {

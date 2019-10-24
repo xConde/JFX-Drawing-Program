@@ -7,6 +7,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Stack;
 
+/**
+ * CommandReader class. Handles reading an input file to sort commands by cases. 
+ *
+ */
 public class CommandReader {
     Stack<Command> commandsToExecute = new Stack<>();
     File inFile = new File("src/commands1.txt");

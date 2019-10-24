@@ -5,6 +5,10 @@ import shapes.ShapeType;
 import shapes.Shape;
 import shapes.ShapeBuilder;
 
+/**
+ * CreateCommand class. Controls the dynamic of the commands.
+ *
+ */
 public class CreateCommand extends Command {
 
     Shape shape;

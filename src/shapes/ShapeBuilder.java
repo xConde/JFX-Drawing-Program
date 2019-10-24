@@ -1,5 +1,9 @@
 package shapes;
 
+/**
+ * ShapeBuilder class. Creates a rectangle or circle based off case.
+ *
+ */
 public class ShapeBuilder {
     public static Shape createShape(ShapeType shapeType, int[] x) {
         Shape shape = null;

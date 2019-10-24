@@ -1,7 +1,7 @@
 package shapes;
 
 /**
- * ShapeType enum
+ * ShapeType enum. Allows us to pick shapes rectangle, circle, and no shape. 
  *
  */
 public enum ShapeType {

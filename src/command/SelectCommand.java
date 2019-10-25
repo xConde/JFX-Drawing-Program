@@ -7,9 +7,8 @@ import launcher.Launcher;
  * Calling SELECT on a shape that does not exist in the list will produce an error message.
  *
  */
-public class SelectCommand extends Command{
-
-    int selectShape;
+public class SelectCommand extends Command {
+    private int selectShape;
 
     /**
      * SelectCommand constructor
@@ -32,7 +31,7 @@ public class SelectCommand extends Command{
      */
     @Override
     public void Do() {
-        if(Launcher.shapesInScene.size() < selectShape){
+        if(Launcher.shapesInScene.size() < selectShape) {
             System.out.println("ERROR: invalid shape for SELECT");
             return;
         }

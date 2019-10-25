@@ -59,6 +59,8 @@ public class CommandReader {
         case "CREATE":
         	ShapeType sType = create(words);
             command = new CreateCommand(sType, x);
+	        commandsToExecute.push(command);
+	        break;
         case "SELECT":
             command = new SelectCommand(Integer.parseInt(words[1]));
 	        commandsToExecute.push(command);

@@ -22,7 +22,7 @@ public class DrawSceneCommand extends Command{
      */
     @Override
     public void Do() {
-        for(Shape shp : Launcher.shapesInScene){
+        for(Shape shp : Launcher.shapesInScene) {
             shp.draw();
         }
     }

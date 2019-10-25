@@ -18,7 +18,7 @@ public class CreateCommand extends Command {
      * @param sType
      * @param x
      */
-    public CreateCommand(ShapeType sType, int[] x){
+    public CreateCommand(ShapeType sType, int[] x) {
         this.shape = ShapeBuilder.createShape(sType, x);
     }
 
@@ -26,7 +26,7 @@ public class CreateCommand extends Command {
      * Overloaded CreateCommand constructor takes 1 param
      * @param shape
      */
-    public CreateCommand(Shape shape){
+    public CreateCommand(Shape shape) {
         this.shape = shape;
     }
 

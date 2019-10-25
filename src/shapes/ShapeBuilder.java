@@ -14,7 +14,7 @@ public class ShapeBuilder {
 	 */
     public static Shape createShape(ShapeType shapeType, int[] x) {
         Shape shape = null;
-        switch(shapeType.getShapesText()){
+        switch(shapeType.getShapesText()) {
             case "RECTANGLE":
                 shape = new Rectangle(x[0], x[1]);
                 break;
